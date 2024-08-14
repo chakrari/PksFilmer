@@ -1,4 +1,5 @@
 // I am doing a change in this branch for testing how it works
+// I am doing 2nd test in this branch for testing how it works
 import React from 'react';
 import logo from '../../assets/photo_for_website/logo.png';
 import { GiHamburgerMenu } from 'react-icons/gi';
