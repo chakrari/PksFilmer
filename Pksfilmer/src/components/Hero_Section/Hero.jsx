@@ -4,7 +4,7 @@ const Hero = () => {
   return (
         <section className="hero">
       <h1 className=" text-4xl font-display font-bold leading-snug mt-28 px-24">PKS Photography</h1>
-      <p class="text-red-500">hello everyone</p>
+      <p className="text-red-500">hello everyone</p>
       <h1> hai ac</h1>
       <h1>Hello I amm seema contibuting to this project</h1>
       <h1>Hello I am aritra contributing to this project</h1>
