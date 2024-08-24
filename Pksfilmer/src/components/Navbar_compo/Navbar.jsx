@@ -34,8 +34,8 @@ const Navbar = ({ isNavDialogOpen, handleMenu }) => {
           </div>
 
           <div className="mt-6 flex flex-col">
-            <a href="#" className="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Home</a>
-            <a href="#" className="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">About</a>
+            <a href="/" className="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Home</a>
+            <a href="/about" className="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">About</a>
             <a href="#" className="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Gallery</a>
             <a href="#" className="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Services & Packages</a>
             <a href="#" className="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Cinematic Video</a>
