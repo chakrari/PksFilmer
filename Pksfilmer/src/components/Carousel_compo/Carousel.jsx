@@ -10,18 +10,23 @@ import cr4 from '../../assets/photo_for_website/cr4.jpg';
 const Carousel = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
+  // Log the image imports to check if they are correct
+  // console.log(cr1, cr2, cr3, cr4);
+
+
   const handleSlideChange = (index) => {
     setCurrentSlide(index);
-
-  const buttons = document.querySelectorAll('[data-carousel-slide-to]');
-  buttons.forEach((button, i) => {
-  button.classList.toggle('bg-white', i === index);
-  button.classList.toggle('bg-gray-800', i !== index);
- 
-  });
+  
+    const buttons = document.querySelectorAll('[data-carousel-slide-to]');
+    buttons.forEach((button, i) => {
+      button.classList.toggle('bg-white', i === index);
+      button.classList.toggle('bg-gray-800', i !== index);
+    });
   };
+  
 
   return (
+    
     <div id="default-carousel" className="relative w-full h-[80vh]" data-carousel="slide">
       {/* Carousel wrapper */}
       <div className="relative w-full h-full overflow-hidden">
