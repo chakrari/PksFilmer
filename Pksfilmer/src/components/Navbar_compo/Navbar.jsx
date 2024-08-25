@@ -30,22 +30,22 @@
 //       {isNavDialogOpen && (
 //         <div id="nav-dialog" className="fixed inset-0 z-40 bg-white p-3 md:hidden">
 //           <div id="nav-bar" className="flex justify-between items-center">
-//             <a href="#" id="brand" className="flex gap-2 items-center">
+//             <Link href="#" id="brand" className="flex gap-2 items-center">
 //               <img className="object-cover max-h-12 max-w-12" src={logo} alt="Logo" />
-//             </a>
+//             </Link>
 //             <button className="p-2 md:hidden" onClick={handleMenu}>
 //               <IoMdClose className="text-gray-600" />
 //             </button>
 //           </div>
 
 //           <div className="mt-6 flex flex-col">
-//             <a href="/" className="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Home</a>
-//             <a href="/about" className="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg onclick = ">About</a>
-//             <a href="#" className="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Gallery</a>
-//             <a href="#" className="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Services & Packages</a>
-//             <a href="#" className="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Cinematic Video</a>
-//             <a href="#" className="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Reviews</a>
-//             <a href="#" className="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Contact</a>
+//             <Link href="/" className="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Home</Link>
+//             <Link href="/about" className="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg onclick = ">About</Link>
+//             <Link href="#" className="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Gallery</Link>
+//             <Link href="#" className="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Services & Packages</Link>
+//             <Link href="#" className="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Cinematic Video</Link>
+//             <Link href="#" className="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Reviews</Link>
+//             <Link href="#" className="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Contact</Link>
 //           </div>
 //         </div>
 //       )}
@@ -60,7 +60,7 @@ import logo from '../../assets/photo_for_website/logo.png';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { IoMdClose } from 'react-icons/io';
 import { useNavigate } from 'react-router-dom';
-
+import { Link } from 'react-router-dom';
 const Navbar = ({ isNavDialogOpen, handleMenu }) => {
   const navigate = useNavigate();
 
@@ -85,22 +85,22 @@ const Navbar = ({ isNavDialogOpen, handleMenu }) => {
       {isNavDialogOpen && (
         <div id="nav-dialog" className="fixed inset-0 z-40 bg-white p-3 md:hidden">
           <div id="nav-bar" className="flex justify-between items-center">
-            <a href="#" id="brand" className="flex gap-2 items-center">
+            <Link href="#" id="brand" className="flex gap-2 items-center">
               <img className="object-cover max-h-12 max-w-12" src={logo} alt="Logo" />
-            </a>
+            </Link>
             <button className="p-2 md:hidden" onClick={handleMenu}>
               <IoMdClose className="text-gray-600" />
             </button>
           </div>
 
           <div className="mt-6 flex flex-col">
-            <a href="/" className="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Home</a>
-            <a href="/about" className="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">About</a>
-            <a href="#" className="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Gallery</a>
-            <a href="#" className="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Services & Packages</a>
-            <a href="#" className="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Cinematic Video</a>
-            <a href="#" className="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Reviews</a>
-            <a href="#" className="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Contact</a>
+            <Link to="/" className="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Home</Link>
+            <Link to="/about" className="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">About</Link>
+            <Link to="/gallery" href="#" className="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Gallery</Link>
+            <Link href="/services and packages" className="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Services & Packages</Link>
+            <Link href="/cinematic video" className="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Cinematic Video</Link>
+            <Link href="/reviews" className="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Reviews</Link>
+            <Link href="/contact" className="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Contact</Link>
           </div>
         </div>
       )}
