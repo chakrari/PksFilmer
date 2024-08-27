@@ -15,16 +15,10 @@ import cr4 from './assets/photo_for_website/cr4.jpg';
 const slides = [cr1, cr2, cr3, cr4];
 
 const App = () => {
-  const [isNavDialogOpen, setIsNavDialogOpen] = useState(false);
-
-  const handleMenu = () => {
-    setIsNavDialogOpen(!isNavDialogOpen);
-  };
-
-  return (
+    return (
     <Router>
       <CarouselProvider>
-      <Navbar isNavDialogOpen={isNavDialogOpen} handleMenu={handleMenu} />
+      <Navbar />
       <main className="App">
         <Routes>
           <Route path="/" element={
@@ -32,6 +26,7 @@ const App = () => {
               <div className="relative z-0">
                 <Carousel slides={slides} />
               </div>
+              {/* <Carousel slides={slides} /> */}
               <Hero />
               <Socialapps />
             </>
