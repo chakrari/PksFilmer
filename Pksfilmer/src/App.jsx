@@ -18,7 +18,7 @@ const App = () => {
     return (
     <Router>
       <CarouselProvider>
-      <Navbar />
+     <Navbar />
       <main className="App">
         <Routes>
           <Route path="/" element={
@@ -26,7 +26,6 @@ const App = () => {
               <div className="relative z-0">
                 <Carousel slides={slides} />
               </div>
-              {/* <Carousel slides={slides} /> */}
               <Hero />
               <Socialapps />
             </>
