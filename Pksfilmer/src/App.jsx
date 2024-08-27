@@ -27,7 +27,7 @@ const App = () => {
                 <Carousel slides={slides} />
               </div>
               <Hero />
-              <Socialapps />
+              {/* <Socialapps /> */}
             </>
           } />
           <Route path="/about" element={<About />} />
