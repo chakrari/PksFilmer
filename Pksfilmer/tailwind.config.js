@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: { 
       colors: {
-      gold: '#FFD700',
+      primary: '#FFD700',
     },
     fontFamily:{
       'display': ['Poppins', 'sans-serif'],
