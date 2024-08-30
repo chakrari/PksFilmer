@@ -104,6 +104,7 @@ const Navbar = ({ isNavDialogOpen, handleMenu }) => {
           </div>
         </div>
       )}
+      
     </nav>
   );
 };
