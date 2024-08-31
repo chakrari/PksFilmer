@@ -1,0 +1,16 @@
+/* AboutCard.css */
+.img-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.img-container img {
+  width: 80%; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 200px; /* Limit the height to control size */
+  transition: transform 0.3s ease;
+}
+
+.img-container img:hover {
+  transform: scale(1.2); /* Adjust the scale factor as needed */
+}
