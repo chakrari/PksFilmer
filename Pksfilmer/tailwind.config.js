@@ -4,12 +4,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#FFD700",
-      },
-      color: {
         brightColor: "#F4511F",
         backgroundColor: "#b7bca9",
         lightText: "#959595",
+        primary: "#FFD700",
       },
       fontFamily: {
         display: ["Poppins", "sans-serif"],
