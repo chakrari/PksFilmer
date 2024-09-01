@@ -14,7 +14,7 @@ const Hero = () => {
         documented a trip that goes beyond that. Through our photographs, we
         want to convey happiness.
       </p>
-      <h1>Vivek passed the test</h1>
+     
     </section>
   );
 };
