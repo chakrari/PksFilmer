@@ -14,7 +14,14 @@ const Hero = () => {
         documented a trip that goes beyond that. Through our photographs, we
         want to convey happiness.
       </p>
-     
+
+
+      <h1 className="text-red-500">
+      </h1>
+      <p className="bg-stone-950">
+        I am testing
+      </p>
+
     </section>
   );
 };
