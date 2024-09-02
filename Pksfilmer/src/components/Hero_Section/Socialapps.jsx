@@ -9,6 +9,7 @@ import {
 import { FcGoogle } from "react-icons/fc";
 import { MdLocationOn } from "react-icons/md";
 import { FaCalendarCheck } from "react-icons/fa";
+import { FaPhoneAlt } from "react-icons/fa";
 
 const Socialapps = () => {
   const [showIcons, setShowIcons] = useState(false);
@@ -30,12 +31,19 @@ const Socialapps = () => {
 
   const icons = [
     {
-      icon: <MdLocationOn size="28" />,
+      icon: <FcGoogle size="28" />,
       link: "https://www.google.com/maps/place/PKS+Filmer/@22.4807021,88.3347199,17z/data=!3m1!4b1!4m6!3m5!1s0x3a027144d1fcdc1b:0x123657d378866540!8m2!3d22.4806972!4d88.3372948!16s%2Fg%2F11rs2b8r8s?entry=ttu&g_ep=EgoyMDI0MDgyOC4wIKXMDSoASAFQAw%3D%3D",
-      bgColor: "bg-teal-600",
-      hoverColor: "hover:bg-teal-700",
-      tooltip: "Location",
+      bgColor: "bg-white",
+      hoverColor: "hover:bg-gray-400",
+      tooltip: "Google Reviews",
     },
+    // {
+    //   icon: <MdLocationOn size="28" />,
+    //   link: "https://www.google.com/maps/place/PKS+Filmer/@22.4807021,88.3347199,17z/data=!3m1!4b1!4m6!3m5!1s0x3a027144d1fcdc1b:0x123657d378866540!8m2!3d22.4806972!4d88.3372948!16s%2Fg%2F11rs2b8r8s?entry=ttu&g_ep=EgoyMDI0MDgyOC4wIKXMDSoASAFQAw%3D%3D",
+    //   bgColor: "bg-teal-600",
+    //   hoverColor: "hover:bg-teal-700",
+    //   tooltip: "Location",
+    // },
     {
       icon: <AiFillFacebook size="28" />,
       link: "https://www.facebook.com/pksfilmer",
@@ -56,6 +64,20 @@ const Socialapps = () => {
       bgColor: "bg-red-600",
       hoverColor: "hover:bg-red-700",
       tooltip: "YouTube",
+    },
+    {
+      icon: <AiFillLinkedin size="28" />,
+      link: "https://www.linkedin.com/in/pritam-kumar-shaw-4a45a4184/?originalSubdomain=in",
+      bgColor: "bg-blue-800",
+      hoverColor: "hover:bg-blue-900",
+      tooltip: "LinkedIn",
+    },
+    {
+      icon: <FaPhoneAlt size="28" />,
+      link: "https://www.justdial.com/Kolkata/Pks-Filmer-Paschim-Putiary/033PXX33-XX33-230323043049-P8U3_BZDET",
+      bgColor: "bg-green-600",
+      hoverColor: "hover:bg-green-700",
+      tooltip: "Just Dial",
     },
     {
       icon: <FaCalendarCheck size="28" />,
