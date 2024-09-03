@@ -37,7 +37,11 @@ const Navbar = () => {
   }, [location]);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-4 bg-transparent">
+    <nav
+      className={`fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-4 bg-transparent ${
+        isNavDialogOpen ? "" : "backdrop-blur-md"
+      }`}
+    >
       <Link to="/" id="brand" className="flex gap-2 items-center">
         <img className="object-cover max-w-12 max-h-12" src={logo} alt="Logo" />
         {/* <span className="text-lg  placeholder:font-medium font-display">Pks Filmer</span> */}
@@ -76,7 +80,7 @@ const Navbar = () => {
         {isNavDialogOpen ? (
           <IoMdClose className="text-white" />
         ) : (
-          <GiHamburgerMenu className="text-white" />
+          <GiHamburgerMenu className="text-gray-600" />
         )}
       </button>
 
@@ -150,7 +154,6 @@ const Navbar = () => {
           </button>
         </div>
       )}
-      
     </nav>
   );
 };
