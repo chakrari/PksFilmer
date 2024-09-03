@@ -2,11 +2,11 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <section className="hero">
-      <h1 className=" text-4xl font-display font-bold leading-snug mt-28 px-24">
+    <section className="w-full flex xl:flerow, flex-col jsutify-center min-h-screen gap-10">
+      <h1 className="text-2xl sm:text-2xl md:text-4xl text font-bold mt-12 sm:mt-16 mx-4 sm:mx-10 md:mx-40">
         PKS Photography
       </h1>
-      <p className="text-xl mt-4 px-24 text-left pr-96 leading-normal mb-16">
+      <p className="text-lg leading-8 sm:max-w-sm ">
         We photograph the unique moments in your life that make you smile. We
         provide evergreen memories for our clients to treasure for the rest of
         their life with our amazing photography. Since 2017, we have been
